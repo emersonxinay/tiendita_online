@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- View for tip of windows-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- For SEO-->
+    <meta name="description"
+        content="la mejor ropa para comprar por internet, camisa, poleras, pantalones, short, casaca" />
+    <meta name="keywords"
+        content="venta de ropas en linea, camisa, poleras, pantalones, short, casaca, oferta, liquidación, precios bajos, modelos tendencia, importados">
+    <!-- Author from the page-->
+    <meta name="author" content="Emerson Espinoza" />
+
+    <title>Tienda de Ropa Virtual</title>
+    <!-- CSS only y bootstrap cdn -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+
+</head>
+
+<body>
+    <!-- header - o cabaecera de pagina inicio-->
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <!-- Nav - pagina de inicio-->
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
+                    <a class="navbar-brand" href="#">LA TIENDA DE ROPA</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Div - listado de compras de carrito-->
+                    <div class="container collapse navbar-collapse " id="navbarCollapse">
+                        <ul class="navbar-nav  pull-xs-right mr-auto">
+                            <li class="nav-item dropdown">
+                                <!-- img - imagen del icon de carrito-->
+                                <img src="img/cart_icon.svg" class="nav-link dropdown-toggle img-fluid mr-auto" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <!-- table - tabla de pedidos seleccionados en carrito-->
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <!-- a - para vaciar todo lo que se selecciono en carrito -->
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- carrusel para promos de ropa-->
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/camisaslider.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Camisas</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/casacaslider.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Casacas</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/pantalonslider.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Pantalones</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- main - cntenido principal de body-->
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Selecciona y compra via internet con mucha seguridad</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+
+            <div class="card-deck mb-3 text-center">
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMISA </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/camisa.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">CLP. <span class="">8000</span></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Excelente para oficinas</li>
+                            <li>Color Celeste</li>
+                            <li>Talla M</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">PANTALON </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/pantalones.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">CLP. <span class="">13000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Excelente para Oficinas</li>
+                            <li>Color Piel</li>
+                            <li>Talla 32</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">SHORT</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/shortnaranja.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">CLP. <span class="">6900</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Excelente para Playa</li>
+                            <li>Color Naranja</li>
+                            <li>Talla 32</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CASACA</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/casacanegra.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">14900</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Excelente Para Invierno</li>
+                            <li>Color Negro</li>
+                            <li>Talla M</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Short Para Mujer</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/shortwoman.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">CLP. <span class="">7900</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Excelente Para Verano</li>
+                            <li>Color Azul con Chispas</li>
+                            <li>Talla S</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMISA INVIERNO</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/camisainvierno.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">CLP. <span class="">15900</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Excelente Para Invierno</li>
+                            <li>Color Rojo y Negro</li>
+                            <li>Talla M</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">BUSO PARA HOMBRES</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/busodeportivo.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">9900</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Excelente para hacer Deporte</li>
+                            <li>Color Negro</li>
+                            <li>Talla M</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">MEDIAS ELEGANTE</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/mediaselegante.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">CLP. <span class="">869</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Excelente Para Oficina</li>
+                            <li>Color Negro</li>
+                            <li>Talla 40</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">DEPORTIVO MUJER</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/conjuntodeporwoman.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">CLP. <span class="">7900</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Excelente Para Hacer Deporte</li>
+                            <li>Color Negro</li>
+                            <li>Talla S</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+    <!-- Footer-->
+    <footer class="py-5 bg-danger">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Emerson Espinoza 2021</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+
+</body>
+
+</html>
